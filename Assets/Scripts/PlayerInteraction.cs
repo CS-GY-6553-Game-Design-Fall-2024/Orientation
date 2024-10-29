@@ -42,5 +42,9 @@ public class PlayerInteraction : MonoBehaviour
     public void ResetInGameMenuState() {
         m_prevMenuKeyState = false;
     }
+
+    public int CheckHoldingMap() {
+        return m_isShowingMap ? 1 : 0;
+    }
 }
 

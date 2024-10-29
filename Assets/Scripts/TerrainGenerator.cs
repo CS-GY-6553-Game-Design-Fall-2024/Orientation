@@ -266,6 +266,14 @@ public class TerrainGenerator : MonoBehaviour
         return;
     }
 
+    public float GetNoiseMapHeight(Vector3 position) {
+        float widthHalf = m_mapDimensions.x/2f;
+        float heightHalf = m_mapDimensions.y/2f;
+        int x = Mathf.FloorToInt(position.x + widthHalf);
+        int y = Mathf.FloorToInt(position.z + heightHalf);
+        return m_combinedMap[x,y];
+    }
+
     void OnValidate() {
         if (m_mapDimensions.x < 1) m_mapDimensions.x = 1;
         if (m_mapDimensions.y < 1) m_mapDimensions.y = 1;

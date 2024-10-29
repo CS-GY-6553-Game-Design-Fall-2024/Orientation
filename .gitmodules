@@ -1,3 +1,6 @@
 [submodule "Assets/UnityUtils"]
 	path = Assets/UnityUtils
 	url = git@github.com:SimpleDevs-AR-VR/UnityUtils.git
+[submodule "Assets/WebGLFileSaverForUnity"]
+	path = Assets/WebGLFileSaverForUnity
+	url = git@github.com:Nateonus/WebGLFileSaverForUnity.git
